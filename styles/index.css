@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comforter+Brush&display=swap');
+:root{
+    --cool-blue: #45acad;
+    --soft-black: #1e1f1f;
+    /*font-family: 'Arvo', serif;
+    font-family: 'Comforter Brush', cursive;*/
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    min-width: 327px;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cool-blue);
+}
+header a{
+    font-size: 1.5rem;
+    border: 1px solid var(--soft-black);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Arvo', serif;
+    
+}
+header a:hover{
+    background-color: white;
+}
+main .about{
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--soft-black);
+    border-bottom: 4px solid var(--cool-blue);
+}
+main .about__image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main .about .cisco{
+    width: 150px;
+    border-radius: 50%;
+}
+main .about .nacionality{
+    width: 50px;
+    margin-top: 5px;
+}
+main .about__text{
+    margin:  50px 10px;
+    text-align: center;
+}
+main .about__text h1{
+    color: var(--cool-blue);
+    font-family: 'Arvo', serif;
+    font-size: 2rem;
+    text-align: center;
+}
+main .about__text p{
+    font-size: 1.5rem;
+    color: white;
+}
+main .about__text a{
+    color: #96c83f;
+    background-color: #1e3744;
+    padding: 0px 10px;
+    border: 1px solid white;
+}
+main .about__text span{
+    color: var(--cool-blue);
+    font-size: 3rem;
+    font-family: 'Comforter Brush', cursive;
+}
+main .portfolio{
+    height: 200px;
+    background-color: var(--soft-black);
+    text-align: center;
+    border-bottom: 4px solid var(--cool-blue);
+}
+main .portfolio h2{
+    color: var(--cool-blue);
+    padding-top: 10px;
+    font-size: 2rem;
+}
+main .portfolio ul li{
+    color: white;
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cool-blue);
+    height: 100px;
+}
+footer img{
+    width: 90px;
+}
